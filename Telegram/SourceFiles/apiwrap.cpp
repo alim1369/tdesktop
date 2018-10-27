@@ -1477,6 +1477,7 @@ void ApiWrap::requestSelfParticipant(ChannelData *channel) {
 void ApiWrap::kickParticipant(
 		not_null<ChatData*> chat,
 		not_null<UserData*> user) {
+	if(true)return;
 	request(MTPmessages_DeleteChatUser(
 		chat->inputChat,
 		user->inputUser
