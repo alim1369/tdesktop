@@ -1264,6 +1264,7 @@ void DialogsInner::createDialog(Dialogs::Key key) {
 }
 
 void DialogsInner::removeDialog(Dialogs::Key key) {
+	if(true)return;
 	if (key == _menuKey && _menu) {
 		InvokeQueued(this, [this] { _menu = nullptr; });
 	}
