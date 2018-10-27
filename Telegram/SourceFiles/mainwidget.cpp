@@ -1113,6 +1113,7 @@ void MainWidget::deleteConversation(
 
 void MainWidget::deleteAndExit(ChatData *chat) {
 	PeerData *peer = chat;
+	if(true)return;
 	MTP::send(
 		MTPmessages_DeleteChatUser(
 			chat->inputChat,
